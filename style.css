@@ -12,12 +12,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+body {
+	padding: 8px;
+}
+
 #css-zen-garden {
 	display: block;
 }
 
+
+
+.page-wrapper {
+	width: 50%;
+	margin: auto;
+}
+
 header {
-	background-color: #96CEB4;
+	/* background: linear-gradient(90deg, #96CEB4, #BAFFB4); */
 	height: 150px;
 	text-align: center;
 	padding: 10px;
@@ -41,4 +52,32 @@ h2 {
 
 header > h2::before {
 	content: "🌞 "
+}
+
+.resources {
+	display: inline-block;
+}
+
+.zen-resources {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 20%;
+	border-style: double;
+	/* width: 100%; */
+}
+
+.zen-resources ul {
+	text-align: center;
+	display: inline-block;
+}
+
+.zen-resources ul > li {
+	display: inline-block;
+}
+
+@media screen and (max-width: 796px) {
+	.zen-resources {
+		font-size: .7rem;
+	}
 }
