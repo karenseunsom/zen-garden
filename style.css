@@ -12,39 +12,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-body {
-	padding: 8px;
-}
 
 #css-zen-garden {
-	display: block;
+	/* display: flex; */
+	width: 80%;
+	margin: auto;
+	max-width: 980px;
 }
 
 
 
 .page-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.intro {
+	width: 25%;
+}
+
+.main.supporting {
 	width: 50%;
-	margin: auto;
+}
+
+.sidebar {
+	width: 20%;
 }
 
 header {
 	/* background: linear-gradient(90deg, #96CEB4, #BAFFB4); */
-	height: 150px;
 	text-align: center;
 	padding: 10px;
+	border-style: solid;
 }
 
 h1 {
 	color: hsl(120, 20%, 40%);
-	font-size: 40px;
+	font-size: 3rem;
 	font-family: 'Righteous', cursive;
 }
 
 h2 {
 	position: relative;
-	bottom: 36px;
-	left: 30px;
-	right: 0px;
 	font-weight: 200;
 	color: #D9534F;
 	overflow: hidden;
@@ -59,10 +69,6 @@ header > h2::before {
 }
 
 .zen-resources {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 20%;
 	border-style: double;
 	/* width: 100%; */
 }
@@ -76,8 +82,8 @@ header > h2::before {
 	display: inline-block;
 }
 
-@media screen and (max-width: 796px) {
-	.zen-resources {
-		font-size: .7rem;
+@media (max-width: 600px) {
+	.page-wrapper {
+		flex-direction: column;
 	}
 }
