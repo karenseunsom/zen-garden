@@ -18,6 +18,7 @@
 	width: 80%;
 	margin: auto;
 	max-width: 980px;
+	padding: 1em;
 }
 
 
@@ -26,18 +27,33 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .intro {
-	width: 25%;
+	width: 30%;
 }
 
 .main.supporting {
-	width: 50%;
+	width: 65%;
 }
 
 .sidebar {
-	width: 20%;
+	display: block;
+	width: 100%;
+	position: relative;
+	bottom: 500;
+	order: 2;
+}
+
+.sidebar > .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.designer-name {
+	text-decoration: none;
+	font-style: italic;
 }
 
 header {
@@ -64,26 +80,28 @@ header > h2::before {
 	content: "🌞 "
 }
 
-.resources {
-	display: inline-block;
+p {
+	line-height: 1.5rem;
+	font-size: 1.15rem;
+	text-align: justify;
 }
 
-.zen-resources {
-	border-style: double;
-	/* width: 100%; */
+.sidebar ul {
+	list-style: none;
+	padding-left: 0;
 }
 
-.zen-resources ul {
-	text-align: center;
-	display: inline-block;
-}
 
-.zen-resources ul > li {
-	display: inline-block;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	.page-wrapper {
 		flex-direction: column;
 	}
 }
+
+@media (max-width: 650px) {
+	.intro, .main.supporting, .sidebar {
+		width: 100%;
+	}
+}
+
+
