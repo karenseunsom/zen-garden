@@ -72,7 +72,7 @@ Cursive fonts imitate human handwriting.
 Fantasy fonts are decorative/playful fonts. */
 
 .explanation {
-	font-family: Copperplate;
+	/* font-family: Copperplate; */
   font-stretch: ultra-expanded;
 }
 .main.supporting {
@@ -93,6 +93,7 @@ Fantasy fonts are decorative/playful fonts. */
 .sidebar > .wrapper {
 	display: flex;
 	flex-direction: column;
+	padding: 1em;
 }
 
 .design-name {
@@ -121,13 +122,13 @@ h1 {
 h2 {
 	position: relative;
 	font-weight: 200;
-	color: white;
+	color: hsl(310, 45%, 27%);
 	overflow: hidden;
 }
 
 h3 {
-	color: hsl(19, 50%, 53%);
-	font-size: 1.4em;
+	color: hsl(0, 0%, 71%);
+	font-size: 1.5em;
 	text-align: center;
 }
 
@@ -136,7 +137,9 @@ header > h2::before {
 }
 
 p {
-	line-height: 1.5rem;
+	font-family: Copperplate;
+	font-weight: 200;
+	line-height: 1.4rem;
 	font-size: 1.2rem;
 	text-align: justify;
 	/* color: hsl(300, 70%, 50%) */
@@ -162,7 +165,7 @@ a {
 } */
 
 
-@media (max-width: 650px) {
+@media (max-width: 930px) {
 	.page-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -171,7 +174,13 @@ a {
 	}
 }
 
-@media (max-width: 650px) {
+@media (min-width: 932px) {
+	.intro p {
+		text-align: initial;
+	}
+}
+
+@media (max-width: 930px) {
 
 	.intro {
 		grid-row: 1/2;
@@ -184,6 +193,13 @@ a {
 	.sidebar {
 		grid-row: 3/4;
 	}
+
 }
 
-
+@media (min-width: 716px) and (max-width: 930px) { 
+    .sidebar .wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
