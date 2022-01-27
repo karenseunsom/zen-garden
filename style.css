@@ -18,7 +18,7 @@
 	width: 80%;
 	margin: auto;
 	max-width: 1000px;
-	padding: 1em;
+	padding: 2em;
 	background: url('https://img.freepik.com/free-photo/colour-smoke-background_71163-197.jpg?size=626&ext=jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -36,6 +36,18 @@
 	/* border: 2px solid white; */
 	background-color: hsl(240, 50%, 20%, 0.7);
 	padding: 1.5em;
+	position: relative;
+}
+
+.page-wrapper::after {
+	content: '';
+	background-color: hsl(240, 50%, 20%, 0.7);
+	position: absolute;
+	margin-left: 1.5em;
+	margin-top: 2em;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
 }
 
 .page-wrapper::before {
@@ -130,6 +142,7 @@ h3 {
 	color: hsl(0, 0%, 71%);
 	font-size: 1.5em;
 	text-align: center;
+	font-family: monospace;
 }
 
 header > h2::before {
@@ -158,6 +171,22 @@ p {
 a {
 	text-decoration: none;
 	color: chartreuse;
+}
+
+a:active {
+	color: rgb(109, 218, 0);
+}
+
+a:visited {
+	color: gray;
+}
+
+li:hover {
+	transform: scale(1.2);
+}
+
+a:hover {
+	color:hsl(310, 44%, 45%);
 }
 
 /* a:not(.designer-name) {
