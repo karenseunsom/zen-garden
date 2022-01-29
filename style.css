@@ -12,9 +12,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-html {
-	overscroll-behavior: none
+body {
+	overflow-x: hidden;
 }
+
 
 
 #css-zen-garden {
@@ -23,10 +24,28 @@ html {
 	margin: auto;
 	max-width: 1000px;
 	padding: 2em;
-	background: url('https://img.freepik.com/free-photo/colour-smoke-background_71163-197.jpg?size=626&ext=jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	position: relative;
+	/* background: url('https://img.freepik.com/free-photo/colour-smoke-background_71163-197.jpg?size=626&ext=jpg'); */
+	background-color: hsl(249, 82%, 7%);
+	/* background-repeat: no-repeat;
+	background-size: cover; */
 	overscroll-behavior: none
+}
+
+#css-zen-garden::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: hsl(253, 70%, 13%);
+	z-index: 0;
+	width: calc(100vw - 22px);
+	margin-left: calc(-50vw + 50% + 10px);
+	/* height: 0; */
+	border-bottom: 2000px solid hsl(182, 62%, 19%);
+	border-left: 1900px solid transparent;
+
 }
 
 
