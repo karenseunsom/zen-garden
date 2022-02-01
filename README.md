@@ -20,3 +20,6 @@
   <li>I should frequently check mobile responsiveness instead of towards the end</li>
 </ul>
 
+![Screen Shot 2022-01-31 at 8 50 51 PM](https://user-images.githubusercontent.com/84594956/151909094-b7c506cb-56e9-463c-ace1-288985a86d4a.png)
+<hr />
+![Screen Shot 2022-01-31 at 8 51 49 PM](https://user-images.githubusercontent.com/84594956/151909104-64ea1764-bb2f-4025-abdf-717fc1758ccd.png)
