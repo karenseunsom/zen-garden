@@ -205,9 +205,9 @@ h3 {
 	font-family: monospace;
 }
 
-header > h2::before {
+/* header > h2::before {
 	content: "🔥 "
-}
+} */
 
 p {
 	font-family: Copperplate;
