@@ -12,7 +12,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-body {
+html, body {
 	overflow-x: hidden;
 	margin: 0;
 }
@@ -355,3 +355,23 @@ a:hover {
 	}
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none;
+}
+
+@media (max-width: 468px ) {
+
+	.page-wrapper {
+		min-width: 100%;
+	}
+
+	#css-zen-garden {
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+
+
+	.extra1, .extra1::before, .extra1::after, .page-wrapper::after {
+		display: none;
+	}
+}
