@@ -1,4 +1,7 @@
 <h1>CSS Zen Garden</h1>
+<ul>
+  <li>Hosted at <a href="https://jovial-kowalevski-c4f470.netlify.app">https://jovial-kowalevski-c4f470.netlify.app</a></li>
+</ul>
 
 <h3>Description</h3>
 <p>The purpose of this project was to brush up on existing CSS skills, learn new ones, and remember how much styling can be done without bootstrap.</p>
@@ -20,4 +23,5 @@
   <li>I should frequently check mobile responsiveness instead of towards the end</li>
 </ul>
 
-![Screen Shot 2022-01-31 at 8 50 51 PM](https://user-images.githubusercontent.com/84594956/151909094-b7c506cb-56e9-463c-ace1-288985a86d4a.png)
+<img width="1791" alt="Screen Shot 2022-02-03 at 1 12 57 PM" src="https://user-images.githubusercontent.com/84594956/152412953-a07fc23b-887b-42ea-bd85-897c37626428.png">
+
