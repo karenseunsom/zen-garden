@@ -10,7 +10,8 @@
 
 /* basic elements */
 
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&family=Righteous&display=swap');
+
 
 html, body {
 	overflow-x: hidden;
@@ -20,38 +21,18 @@ html, body {
 
 
 #css-zen-garden {
-	/* display: flex; */
-	/* width: 80%; */
 	margin: auto;
-	/* max-width: 1000px; */
-	padding: 2em;
+	padding-top: 2em;
+	padding-bottom: 4em;
 	position: relative;
-	/* background: url('https://img.freepik.com/free-photo/colour-smoke-background_71163-197.jpg?size=626&ext=jpg'); */
 	background-color: hsl(249, 82%, 7%);
-	/* background-repeat: no-repeat;
-	background-size: cover; */
 	overscroll-behavior: none;
 	display: flex;
 	justify-content: center;
 }
 
-/* #css-zen-garden::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	background-color: hsl(253, 70%, 13%);
-	z-index: 0;
-	width: calc(100vw - 22px);
-	margin-left: calc(-50vw + 50% + 10px);
-	height: 0;
-	border-bottom: 2000px solid hsl(182, 62%, 19%);
-	border-left: 1900px solid transparent;
-} */
 
 .extra1 {
-	/* content: ''; */
 	position: absolute;
 	height: 1200px;
 	width: 100%;
@@ -108,19 +89,6 @@ html, body {
 	width: 100%;
 }
 
-/* .page-wrapper::before {
-	content: '';
-	width: 10px;
-	height: 10px;
-	background-color: hsl(207, 35%, 52%);
-	position: absolute;
-	margin-top: 30%;
-	margin-left: -20%;
-    animation-name: fire-1;
-	border-radius: 75%;
-    animation-duration: 1s;
-	animation-iteration-count: infinite;
-} */
 
 @keyframes fire-1 {
 	50% {
@@ -140,9 +108,7 @@ html, body {
 
 
 .explanation {
-	/* font-family: Copperplate; */
   font-stretch: ultra-expanded;
-  /* border: 1px solid; */
 }
 .main.supporting {
 	grid-row: 1/3;
@@ -176,7 +142,6 @@ html, body {
 header {
 	text-align: center;
 	padding: .6rem;
-	/* border-style: solid; */
 }
 
 h1 {
@@ -192,7 +157,7 @@ h1 {
 h2 {
 	position: relative;
 	font-weight: 200;
-	color: hsl(182, 46%, 42%);
+	color: hsl(276, 43%, 48%);
 	overflow: hidden;
 	text-transform: uppercase;
 	font-family: monaco;
@@ -205,18 +170,15 @@ h3 {
 	font-family: monospace;
 }
 
-/* header > h2::before {
-	content: "🔥 "
-} */
 
 p {
-	font-family: Copperplate;
+	font-family: 'Hind Guntur', sans-serif;
 	font-weight: 200;
-	line-height: 1.4rem;
+	line-height: 1.6rem;
 	font-size: 1.2rem;
 	text-align: justify;
-	/* color: hsl(300, 70%, 50%) */
-	color: hsl(0, 0%, 38%);
+	/* color: hsl(0, 0%, 38%); */
+	color: #4974a5;
 }
 
 .sidebar ul {
@@ -253,43 +215,122 @@ a:hover {
 	position: absolute;
 	height: 50px;
 	width: 40px;
-	bottom: 50%;
-	left: 30%;
+	bottom: 40%;
+	left: 20%;
 	background-color: #6db33f;
 	border-radius: 200px 0;
 	animation-name: leaf1;
-	animation-duration: 2s;
-	animation-timing-function: linear;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
 }
 
 @keyframes leaf1 {
 	0% {
-		bottom: 60%;
-		left: 30%
-	}
-
-	25% {
-		bottom: 70%;
-		left: 40%;
-		transform: rotate(90deg)
-	}
-
-	50% {
-		bottom: 80%;
-		left: 50%;
-	}
-
-	75% {
-		bottom: 90%;
-		left: 60%;
+		transform: scale(1.5);
 	}
 
 	100% {
 		bottom: 100%;
-		left: 70%;
-		/* opacity: 0; */
-		transform: rotate(180deg)
+		left: 60%;
+		opacity: 0;
+	}
+}
+
+.extra3 {
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 40px;
+	bottom: 40%;
+	left: 40%;
+	background-color: #6db33f;
+	border-radius: 200px 0;
+	animation-name: leaf2;
+	animation-duration: 4s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes leaf2 {
+
+	100% {
+		bottom: 110%;
+		left: 80%;
+		opacity: 0;
+		transform: scale(1.5)
+	}
+}
+
+.extra4 {
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 40px;
+	bottom: 40%;
+	left: 50%;
+	background-color: #6db33f;
+	border-radius: 200px 0;
+	animation-name: leaf3;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes leaf3 {
+	100% {
+		left: 80%;
+		bottom: 100%;
+		opacity: 0
+	}
+}
+
+.extra5 {
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 40px;
+	bottom: 40%;
+	left: 60%;
+	background-color: #6db33f;
+	border-radius: 200px 0;
+	animation-name: leaf4;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+@keyframes leaf4 {
+	100% {
+		left: 100%;
+		bottom: 100%;
+		opacity: 0;
+	}
+}
+
+.extra6 {
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 40px;
+	bottom: 50%;
+	left: 10%;
+	background-color: #6db33f;
+	border-radius: 200px 0;
+	animation-name: leaf5;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes leaf5 {
+	100% {
+		left: 40%;
+		bottom: 100%;
+		opacity: 0;
 	}
 }
 
